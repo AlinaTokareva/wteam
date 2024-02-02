@@ -1,10 +1,14 @@
 import './globals.css'
-import {Providers} from './providers'
-// import React from 'react'
+import Providers from './providers'
+import { Metadata } from 'next'
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export const metadata: Metadata = {
+    title: 'WorshipTeam App'
+}
+
+const RootLayout = ({children}: { children: React.ReactNode }) => {
     return (
-        <html lang="en" className='light no-touch'>
+        <html lang="en" className='light'>
         <body>
         <Providers>
             {children}
@@ -13,3 +17,5 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         </html>
     )
 }
+
+export default RootLayout
