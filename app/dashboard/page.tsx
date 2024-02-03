@@ -2,7 +2,7 @@ import {Chip} from "@nextui-org/react"
 
 const DashboardPage = () => {
     return (
-        <Chip color="warning" variant="bordered">Chip</Chip>
+        <Chip color="warning" variant="bordered">Воскресенье</Chip>
     )
 }
 
