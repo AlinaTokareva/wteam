@@ -1,8 +1,7 @@
-import type {PropsWithChildren} from 'react'
+import React from "react"
 
-const DashboardLayout = ({children}: PropsWithChildren<unknown>) => {
+const DashboardLayout = ({children}: { children: React.ReactNode }) => {
     return <div>
-        <h2>Component</h2>
         {children}
     </div>
 

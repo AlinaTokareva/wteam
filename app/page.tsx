@@ -1,6 +1,6 @@
-'use client'
-import React from 'react'
-import {Card, CardBody, Image, Button, Slider} from '@nextui-org/react'
+"use client"
+import React from "react"
+import {Card, CardBody, Image, Button, Slider} from "@nextui-org/react"
 
 const App = () => {
     const [liked, setLiked] = React.useState(false)
@@ -29,7 +29,7 @@ const App = () => {
                             <div className="flex flex-col gap-0">
                                 <h3 className="font-semibold text-foreground/90">Daily Mix</h3>
                                 <p className="text-small text-foreground/80">12 Tracks</p>
-                                <h1 className="text-large font-medium mt-2">The Father's House</h1>
+                                <h1 className="text-large font-medium mt-2">The Father`s House</h1>
                             </div>
                             <Button
                                 isIconOnly
@@ -46,8 +46,8 @@ const App = () => {
                             <Slider
                                 aria-label="Music progress"
                                 classNames={{
-                                    track: 'bg-default-500/30',
-                                    thumb: 'w-2 h-2 after:w-2 after:h-2 after:bg-foreground'
+                                    track: "bg-default-500/30",
+                                    thumb: "w-2 h-2 after:w-2 after:h-2 after:bg-foreground"
                                 }}
                                 color="foreground"
                                 defaultValue={33}

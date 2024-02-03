@@ -1,5 +1,9 @@
+import {Chip} from "@nextui-org/react"
+
 const DashboardPage = () => {
-    return 'Dashboard'
+    return (
+        <Chip color="warning" variant="bordered">Chip</Chip>
+    )
 }
 
 export default DashboardPage

@@ -1,14 +1,15 @@
-import './globals.css'
-import Providers from './providers'
-import { Metadata } from 'next'
+import "./globals.css"
+import Providers from "./providers"
+import { Metadata } from "next"
+import React from "react"
 
-export const metadata: Metadata = {
-    title: 'WorshipTeam App'
+const metadata: Metadata = {
+    title: "WorshipTeam App"
 }
 
 const RootLayout = ({children}: { children: React.ReactNode }) => {
     return (
-        <html lang="en" className='light'>
+        <html lang="en" className="light">
         <body>
         <Providers>
             {children}
@@ -18,4 +19,4 @@ const RootLayout = ({children}: { children: React.ReactNode }) => {
     )
 }
 
-export default RootLayout
+export {RootLayout as default, metadata}
