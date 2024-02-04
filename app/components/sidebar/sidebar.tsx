@@ -1,25 +1,37 @@
 "use client"
 import {Sidebar, Menu, MenuItem, SubMenu} from "react-pro-sidebar"
-import {Image} from "@nextui-org/image"
+import {User} from "@nextui-org/User"
+import prisma from "@/lib/prisma"
 
-const SideBar = () => {
+
+const SideBar = async () => {
+    // const user = await prisma.user.findUnique({
+    //     where: {
+    //         email: "tokalina97@mail.ru"
+    //     }
+    // })
+
     return <Sidebar>
-        <Image
-            width={60}
-            alt="логотип"
-            src="logo.png"
-        />
-        <div style={{display: "flex", flexDirection: "column", height: "100%"}}>
-
-            <Menu>
-                <SubMenu label="Charts">
-                    <MenuItem> Pie charts </MenuItem>
-                    <MenuItem> Line charts </MenuItem>
-                </SubMenu>
-                <MenuItem> Documentation </MenuItem>
-                <MenuItem> Calendar </MenuItem>
-            </Menu>
+        <div style={{
+            padding: 20
+        }}>
+            <User
+                // name={user.username}
+                // description={user.email}
+                avatarProps={{
+                    src: "avatar.jpg",
+                    size: "lg"
+                }}
+            />
         </div>
+        <Menu>
+            <SubMenu label="Charts">
+                <MenuItem> Pie charts </MenuItem>
+                <MenuItem> Line charts </MenuItem>
+            </SubMenu>
+            <MenuItem> Documentation </MenuItem>
+            <MenuItem> Calendar </MenuItem>
+        </Menu>
     </Sidebar>
 }
 
