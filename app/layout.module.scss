@@ -1,0 +1,17 @@
+
+.layoutContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+
+  .sidebarContainer {
+    flex: 0 1 0;
+  }
+
+  .mainContainer{
+    flex: 1 0 auto;
+    margin: 15px;
+  }
+}
